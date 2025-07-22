@@ -1,13 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   server:{
     port: 3000,
   },
-  base: '/bicrougelading/', 
+  // CRITICAL FIX: For custom domains served from the root, base should be '/'
+  base: '/', 
   css: {
     postcss: {
       plugins: [
