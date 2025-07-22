@@ -118,7 +118,7 @@ Error generating stack: `+l.message+`
           }
           /* Custom styles for the hero section background */
           .hero-background {
-            background-image: url('src/assets/teacher_ai-colab.jpg'); /* Placeholder for student classroom image */
+            background-image: url('/src/assets/teacher_ai-colab.jpg'); /* Placeholder for student classroom image */
             background-size: cover;
             background-position: center;
             background-attachment: fixed; /* Optional: for parallax effect */
