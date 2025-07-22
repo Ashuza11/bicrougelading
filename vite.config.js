@@ -7,8 +7,7 @@ export default defineConfig({
   server:{
     port: 3000,
   },
-  // CRITICAL FIX: For custom domains served from the root, base should be '/'
-  base: '/', 
+  base: '/bicrougelading', 
   css: {
     postcss: {
       plugins: [

@@ -30,7 +30,7 @@
     "globals": "^16.3.0",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.1",
-    "deploy": "gh-pages -d dist -b main",
+    "deploy": "gh-pages",
     "vite": "^7.0.4"
   }
 }

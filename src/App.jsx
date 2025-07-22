@@ -198,7 +198,7 @@ const App = () => {
           }
           /* Custom styles for the hero section background */
           .hero-background {
-            background-image: url('src/assets/teacher_ai-colab.jpg'); /* Placeholder for student classroom image */
+            background-image: url('${process.env.PUBLIC_URL}/assets/teacher_ai-colab.jpg')
             background-size: cover;
             background-position: center;
             background-attachment: fixed; /* Optional: for parallax effect */
@@ -525,8 +525,9 @@ const App = () => {
         <div className="container mx-auto px-6 max-w-5xl text-center">
           <div className="mb-8">
             {/* <h3 className="text-2xl font-bold mb-4">Bic Rouge</h3> */}
+            
             <img
-              src="src/assets/Logo.svg"
+              src={`${process.env.PUBLIC_URL}/assets/Logo.svg`}
               alt="Bic Rouge Logo"
               className="mx-auto h-12 sm:h-16 my-4 w-auto bic-rouge-logo"
             />
