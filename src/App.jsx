@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
-import bicRougeLogo from './assets/Logo.svg'; 
 import backgraoundImage from './assets/teacher_ai-colab.jpg';
 
 // Data for Llama 3 8B Instruct Metrics (from user's code)
