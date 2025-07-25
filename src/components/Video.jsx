@@ -1,5 +1,5 @@
 
-const Video = (youtubeVideoUrl ) => {
+const Video = ({ youtubeVideoUrl }) => {
     return (
         <section id="video" className="py-16 bg-gray-50">
             <div className="container mx-auto px-6 max-w-5xl text-center">
@@ -22,7 +22,7 @@ const Video = (youtubeVideoUrl ) => {
                 Learn more about Bic Rouge, its development, and its impact in our full presentation video.
             </p>
             <p className="text-sm text-gray-500 mt-2">
-                <span className="font-bold">Note:</span> Please replace. 
+                <span className="font-bold">Note:</span> This project is currently a prototype developed with a small, curated dataset. We are now building a more robust dataset by collecting available data from local schools and universities and leveraging synthetic data methods. Our next steps include testing with cutting-edge models and exploring SLMs for offline use in underserved areas."
             </p>
             </div>
         </section>
