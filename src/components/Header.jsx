@@ -1,5 +1,5 @@
 import React from 'react';
-import bicRougeLogo from './assets/Logo.svg'; 
+import bicRougeLogo from '../assets/Logo.svg'; 
 
 const Header = () => (
   <header className="hero-background py-16 md:py-24 lg:py-32 flex items-center justify-center min-h-screen">

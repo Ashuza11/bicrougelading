@@ -47,7 +47,26 @@ const ExperimentalResults = ({ activeModel, setActiveModel, currentData }) => {
         </div>
 
         <div className="mt-10 p-6 bg-gray-50 rounded-lg border border-gray-200 shadow-sm">
-          {/* Interpretation Text... */}
+            <h4 className="text-xl font-semibold text-gray-800 mb-4">Interpretation of Results:</h4>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              The dashboards present the automated test results for GPT-3.5 Turbo and LLaMA 3 8B Instruct
+              in Azure AI Studio Evaluation. The test evaluates three key performance metrics: coherence,
+              fluency, and similarity, each rated on a scale from 1 to 5, where 5 is the best score.
+            </p>
+            <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700">
+              <li>
+                <span className="font-semibold">Coherence and Fluency:</span> GPT-3.5 Turbo scores slightly higher than LLaMA 3 8B
+                Instruct, indicating better performance in generating logical and natural-sounding text.
+              </li>
+              <li>
+                <span className="font-semibold">Similarity:</span> Both models perform slightly equally, struggling to generate text closely
+                matching the grounded truth (teacher's correction).
+              </li>
+            </ul>
+            <p className="mt-4 text-gray-700 leading-relaxed">
+              <span className="font-semibold">Conclusion:</span> GPT-3.5 Turbo has a slight edge over LLAMA 3 8B Instruct in coherence and
+              fluency, while both models are slightly similar in handling similarity tasks.
+            </p>
         </div>
       </div>
     </section>
