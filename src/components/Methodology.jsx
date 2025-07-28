@@ -1,6 +1,16 @@
-import SystemArchitectureDiagram from "../assets/BickRouge_Architecture.png"
+import React from 'react';
+import SystemArchitectureDiagram from '../assets/BickRouge_Architecture.png';
+import GptIcon from '../assets/ions/gpt.jpg'; // Your imported GPT-3.5 Turbo icon
+import LlamIcon from '../assets/ions/llama3.jpg'; // Your imported Llama 3 icon
+import PythonIcon from '../assets/ions/python.png'; // Your imported Python icon
+import ReactIcon from '../assets/ions/React-icon.png'; // Your imported ReactJS icon
+import FastApiIcon from '../assets/ions/fastAPI.jpeg'; // Your imported FastAPI icon
+import AzureIcon from '../assets/ions/Azure.png'; // Your imported Azure AI icon
+
 
 const Methodology = () => {
+    const iconSizeClasses = "inline-block h-6 w-auto ml-2 align-middle"; 
+
     return (
         <section id="methodology" className="py-16 bg-white">
             <div className="container mx-auto px-6 max-w-5xl">
@@ -15,29 +25,19 @@ const Methodology = () => {
                         </p>
                         <ul className="list-disc list-inside text-lg space-y-2">
                             <li>
-                                <span className="flex items-center">
-                                    <span className="font-semibold text-red-600">GPT-3.5 Turbo:</span>
-                                    {/* GPT-3.5/OpenAI Logo */}
-                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" className="inline-block h-5 w-auto ml-2">
-                                        <path d="M485.5 197.8c0-3.3-1.6-6.5-4.4-8.5l-39.7-27.5c-2.7-1.9-6.2-2.3-9.3-1.2l-37.1 13.9c-3.1 1.2-5.4 3.9-6.3 7.2l-4.7 18.2c-1.3 5.3 1.9 10.7 7.2 12l29.4 7.5c.3.1.6.2.9.2 1.4 0 2.8-.7 3.6-2.1l11.5-19.9c.7-1.3 2.1-2.1 3.6-2.1H415c1.4 0 2.8.7 3.6 2.1l20.4 35.3c.7 1.3 2.1 2.1 3.6 2.1h13.2c1.4 0 2.8-.7 3.6-2.1l22.4-38.9c.8-1.4 1.2-3 1.2-4.6zM286.3 358.9c-2.4 2.4-5.7 3.8-9.1 3.8h-11.4c-3.4 0-6.7-1.4-9.1-3.8l-87.1-87.1c-2.4-2.4-3.8-5.7-3.8-9.1v-11.4c0-3.4 1.4-6.7 3.8-9.1l87.1-87.1c2.4-2.4 5.7-3.8 9.1-3.8h11.4c3.4 0 6.7 1.4 9.1 3.8l87.1 87.1c2.4 2.4 3.8 5.7 3.8 9.1v11.4c0 3.4-1.4 6.7-3.8 9.1l-87.1 87.1zm-13.8-103.5l-33 33 13.8 13.8c-2.4 2.4-3.8 5.7-3.8 9.1v11.4c0 3.4 1.4 6.7 3.8 9.1l87.1 87.1c2.4 2.4 5.7 3.8 9.1 3.8h11.4c3.4 0 6.7-1.4 9.1-3.8l87.1-87.1c2.4-2.4 3.8-5.7 3.8-9.1v-11.4c0-3.4-1.4-6.7-3.8-9.1L323 252.7c-2.4-2.4-5.7-3.8-9.1-3.8h-11.4c-3.4 0-6.7 1.4-9.1 3.8l-33 33zM151.7 413.2c0 3.3 1.6 6.5 4.4 8.5l39.7 27.5c2.7 1.9 6.2 2.3 9.3 1.2l37.1-13.9c3.1-1.2 5.4-3.9 6.3-7.2l4.7-18.2c1.3-5.3-1.9-10.7-7.2-12l-29.4-7.5c-.3-.1-.6-.2-.9-.2-1.4 0-2.8.7-3.6 2.1l-11.5 19.9c-.7 1.3-2.1 2.1-3.6 2.1h-13.2c-1.4 0-2.8-.7-3.6-2.1l-20.4-35.3c-.7-1.3-2.1-2.1-3.6-2.1h-13.2c-1.4 0-2.8.7-3.6 2.1l-22.4 38.9c-.8 1.4-1.2 3-1.2 4.6zM132.8 358.9c-2.4-2.4-3.8-5.7-3.8-9.1v-11.4c0-3.4 1.4-6.7 3.8-9.1l87.1-87.1c2.4-2.4 5.7-3.8 9.1-3.8h11.4c3.4 0 6.7 1.4 9.1 3.8l87.1 87.1c2.4 2.4 3.8 5.7 3.8 9.1v11.4c0 3.4-1.4 6.7-3.8 9.1l-87.1 87.1c-2.4 2.4-5.7 3.8-9.1 3.8h-11.4c-3.4 0-6.7-1.4-9.1-3.8l-87.1-87.1zm-75.1-45.5L7.6 197.8c0-3.3 1.6-6.5 4.4-8.5l39.7-27.5c2.7-1.9 6.2-2.3 9.3-1.2l37.1 13.9c3.1 1.2 5.4 3.9 6.3 7.2l4.7 18.2c1.3 5.3-1.9 10.7-7.2 12l-29.4 7.5c-.3.1-.6.2-.9.2-1.4 0-2.8-.7-3.6-2.1l-11.5-19.9c-.7-1.3-2.1-2.1-3.6-2.1h-13.2c-1.4 0-2.8.7-3.6 2.1l-20.4 35.3c-.7 1.3-2.1 2.1-3.6 2.1h-13.2c-1.4 0-2.8-.7-3.6-2.1l-22.4-38.9c-.8-1.4-1.2-3-1.2-4.6z" fill="#000000" />
-                                    </svg>
-                                </span>
-                                A proprietary model known for its reliability and high performance in various NLP tasks.
+                                <span className="font-semibold text-red-600">GPT-3.5 Turbo:</span>
+                                <img src={GptIcon} alt="GPT-3.5 Turbo Logo" className={iconSizeClasses} />
+                                {' '}A proprietary model known for its reliability and high performance in various NLP tasks.
                             </li>
                             <li>
-                                <span className="flex items-center">
-                                    <span className="font-semibold text-blue-600">Llama 3 8B-Instruct:</span>
-                                    {/* Llama 3 Logo */}
-                                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" className="inline-block h-5 w-auto ml-2">
-                                        <path fill="#21201E" d="M11.96 11.233c-.312 0-.612.062-.897.189l-.916 2.05a.862.862 0 0 1-.777.562c-.428 0-.792-.326-.826-.75l-.048-.564c-.035-.424.288-.802.723-.837a.87.87 0 0 1 .803.535l.43 1.056c.148-.22.25-.47.305-.733l-.11-.537c-.161-.784.303-1.554 1.087-1.714.785-.16 1.555.304 1.716 1.088l.11.537c.057.272.164.53.319.761l.429-1.057a.867.867 0 0 1 .803-.535c.435.035.758.413.723.837l-.048.564c-.034.424-.398.75-.826.75a.861.861 0 0 1-.777-.562l-.915-2.05c-.286-.127-.586-.189-.897-.189zm.139-4.321c-.053-.195-.102-.387-.145-.572l-.398-.242a.897.897 0 0 1 .632-1.57c.39 0 .707.35.719.746l.01.38c.005.176.01.353.016.53l.317.438c.414.571.309 1.385-.262 1.8.847.674 2.02.722 2.909.125a.853.853 0 0 1 .36-.28c.42-.14.86-.06.86.368c0 .248-.12.482-.32.656l-.112.096c-.633.541-1.428.84-2.261.895l-.117.008c-1.393.078-2.616-.67-3.414-1.895l-.03-.043c-.49-.714-.658-1.57-.492-2.383l.11-.537c.045-.224.127-.435.241-.624a.895.895 0 0 1-.606-1.595c-.39-.14-.803-.046-.943.344a.876.876 0 0 1 .135.89c.148.243.308.48.477.712l.138.204a.858.858 0 0 1-.223 1.13c-.56.402-1.258.625-2.003.625a.858.858 0 0 1-1.11-.295c-.244-.457-.141-.99.227-1.35.32-.303.82-.41 1.25-.262l.24.084c.43.15.89.043 1.22-.275l.182-.178.026-.025c.34-.333.454-.836.27-1.26-.068-.16-.145-.316-.231-.468l-.497-.83c-.39-.65-.79-.824-1.43-.532a.89.89 0 0 1-1.428-.415c-.17-.37-.035-.785.343-.956.417-.184.88-.046 1.162.338l.148.204c.142.23.25.474.32.727l.078.43a.873.873 0 0 1-1.26.852c-.567-.22-1.077-.665-1.472-1.246a.88.88 0 0 1-.16-1.018c.245-.378.67-.54 1.09-.43.42.11.75.46.75.88.005.12.012.24.02.36.012.203.024.406.038.608l.11.537c.105.513-.19.985-.702 1.09-.512.106-.985-.19-1.09-.702a.858.858 0 0 1 .054-.455l.135-.355c.105-.278.172-.572.206-.874l.012-.132c.03-.43-.284-.812-.71-.847a.862.862 0 0 1-.767.585c-.273.06-.54.162-.79.3a.852.852 0 0 1-.502-.12c-.225-.132-.36-.36-.36-.615c0-.435.405-.75.84-.75.053 0 .105.006.157.02l.142.05c.294.1.59.16.89.18l.06.002c.42.015.77-.32.77-.745c0-.41-.33-.74-.75-.75-.11-.004-.22-.008-.33-.013c-.155-.008-.31-.016-.465-.026l-.285-.015c-.426-.02-.823-.298-.988-.707c-.165-.41-.05-1.12.36-1.52.33-.31.8-.41 1.25-.26l.16.05c.42.15.82.02 1.1-.31a.867.867 0 0 1 .15-1.11c-.56-.402-1.26-.625-2.004-.625c-.266 0-.528.037-.783.107c-.426.118-.813.43-1.015.845a.868.868 0 0 1-.225.297l-.21.282c-.328.438-.456.974-.35 1.54.106.566.474 1.026.974 1.298.5.27.75.31.75.31.33.05.6.33.6.66.01.37-.25.68-.61.73-.25.04-.51-.02-.75-.16l-.2-.11c-.34-.18-.72-.28-1.1-.28-.56 0-1.07.2-1.48.54-.41.34-.7.83-.8 1.4-.1.6-.14 1.22-.16 1.83l-.004.14a.86.86 0 0 1-.9.76.845.845 0 0 1-.76-.9c-.015-.09-.028-.18-.04-.27-.024-.265-.042-.53-.053-.796l-.01-.32c-.005-.152-.01-.303-.015-.453c-.005-.205-.008-.41-.01-.615-.013-.48-.387-.872-.867-.887a.86.86 0 0 1-.84.76c-.055.01-.11.02-.164.03-.42.06-.82.35-.97.77a.86.86 0 0 1 .18 1.08c.24.32.53.58.85.78l.42.24c.48.27.71.83.56 1.34-.14.51-.67.79-1.17.65-.21-.06-.41-.14-.6-.23-.42-.19-.78-.49-1.03-.88-.41-.64-.53-1.39-.33-2.11.19-.72.63-1.32 1.22-1.74l-.08-.12c-.22-.31-.38-.66-.46-1.04-.15-.7.2-1.4.9-1.6.4-.09.8.04 1.08.34l.09.1.09.12c.16.2.27.42.33.66.1.4.1.84.02 1.25a.86.86 0 0 1-1.3.66c-.34-.23-.62-.53-.82-.88-.2-.35-.32-.76-.35-1.18-.04-.56.09-1.13.4-1.61.34-.51.81-.92 1.35-1.15.54-.23 1.14-.26 1.7-.09.3.08.58.2.85.34l.2.1a.86.86 0 0 1-.61 1.54c-.45-.1-.87-.33-1.22-.68-.21-.21-.38-.45-.51-.71-.21-.44-.31-.92-.25-1.4.06-.48.33-.9.74-1.19.4-.29.87-.4 1.33-.3.46.1.85.36 1.1.72.26.37.38.8.32 1.25a.87.87 0 0 1-.63.97c-1.3.36-2.52-1.08-1.69-2.34l-.003-.004c.5-1.23 1.27-2.3 2.19-3.17.92-.88 1.99-1.5 3.14-1.8.4-.1.82-.12 1.25-.09.3.02.6.09.89.2l.27.09a.86.86 0 0 1-.65 1.56c-.3-.09-.59-.2-.88-.22-.3-.02-.6-.02-.9.03-.43.08-.85.24-1.23.47-.38.24-.73.54-1.04.89-.3.35-.55.74-.75 1.16-.2.42-.3.88-.28 1.34l-.004.1c.02.43-.29.81-.72.84z" />
-                                    </svg>
-                                </span>
-                                A leading open-source model, highly prized for its accessibility, adaptability, and strong community support.
+                                <span className="font-semibold text-blue-600">Llama 3 8B-Instruct:</span>
+                                <img src={LlamIcon} alt="Llama 3 Logo" className={iconSizeClasses} />
+                                {' '}A leading open-source model, highly prized for its accessibility, adaptability, and strong community support.
                             </li>
                         </ul>
                     </div>
                     <div className="flex justify-center">
-                        {/* Placeholder for System Architecture Diagram */}
+                        {/* System Architecture Diagram remains as is */}
                         <img
                             src={SystemArchitectureDiagram}
                             alt="Bic Rouge System Architecture Diagram"
@@ -51,39 +51,22 @@ const Methodology = () => {
                         The Bic Rouge system is built with
                         <span className="flex items-center">
                             <span className="font-semibold">Python</span>
-                            {/* Python Logo */}
-                            <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" className="inline-block h-5 w-auto ml-2" fill="#3776AB">
-                                <path d="M79.845 28.514h-10.963c1.921-2.909 3.011-6.198 3.011-9.742 0-11.458-9.289-20.748-20.749-20.748s-20.749 9.29-20.749 20.748c0 3.544 1.09 6.833 3.011 9.742h-10.963c-6.117 0-11.082 4.965-11.082 11.082v10.963c0 6.117 4.965 11.082 11.082 11.082h10.963c-1.921 2.909-3.011 6.198-3.011 9.742 0 11.458 9.289 20.749 20.749 20.749s20.749-9.29 20.749-20.749c0-3.544-1.09-6.833-3.011-9.742h10.963c6.117 0 11.082-4.965 11.082-11.082v-10.963c0-6.117-4.965-11.082-11.082-11.082zm-20.749 53.693c-6.118 0-11.082-4.965-11.082-11.082s4.964-11.082 11.082-11.082c6.117 0 11.082 4.965 11.082 11.082s-4.965 11.082-11.082 11.082zm0-53.693c-6.118 0-11.082-4.965-11.082-11.082s4.964-11.082 11.082-11.082c6.117 0 11.082 4.965 11.082 11.082s-4.965 11.082-11.082 11.082z" />
-                            </svg>
+                            <img src={PythonIcon} alt="Python Logo" className={iconSizeClasses} />
                         </span>,
                         <span className="flex items-center">
                             <span className="font-semibold">FastAPI</span>
-                            {/* FastAPI Logo */}
-                            <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" className="inline-block h-5 w-auto ml-2" fill="#009688">
-                                <path d="M228.6 150.3l-28.7-16.6c-2.3-1.3-5.2-1.3-7.5 0L128 174.6l-64.4-37.4c-2.3-1.3-5.2-1.3-7.5 0L27.4 150.3c-2.3 1.3-3.7 3.8-3.7 6.4v33.2c0 2.6 1.4 5.1 3.7 6.4l64.4 37.4c2.3 1.3 5.2 1.3 7.5 0l64.4-37.4c2.3-1.3 3.7-3.8 3.7-6.4v-33.2c0-2.6-1.4-5.1-3.7-6.4zM228.6 54.7L164.2 18.2c-2.3-1.3-5.2-1.3-7.5 0L27.4 92.1c-2.3 1.3-3.7 3.8-3.7 6.4v33.2c0 2.6 1.4 5.1 3.7 6.4l64.4 37.4c2.3 1.3 5.2 1.3 7.5 0l64.4-37.4c2.3-1.3 3.7-3.8 3.7-6.4v-33.2c0-2.6-1.4-5.1-3.7-6.4zM128 206l-64.4-37.4c-2.3-1.3-3.7-3.8-3.7-6.4v-33.2c0-2.6 1.4-5.1 3.7-6.4l64.4-37.4c2.3-1.3 5.2-1.3 7.5 0l64.4 37.4c2.3 1.3 3.7 3.8 3.7 6.4v33.2c0 2.6-1.4 5.1-3.7 6.4L128 206z" />
-                            </svg>
+                            <img src={FastApiIcon} alt="FastAPI Logo" className={iconSizeClasses} />
                         </span>
                         for the backend API, and
                         <span className="flex items-center">
                             <span className="font-semibold">ReactJS</span>
-                            {/* ReactJS Logo */}
-                            <svg viewBox="-11.5 -10.23174 23 20.46348" xmlns="http://www.w3.org/2000/svg" className="inline-block h-5 w-auto ml-2" fill="#61DAFB">
-                                <circle cx="0" cy="0" r="2.05" fill="#61DAFB" />
-                                <g stroke="#61DAFB" stroke-width="1" fill="none">
-                                    <ellipse rx="11" ry="4.2" />
-                                    <ellipse rx="11" ry="4.2" transform="rotate(60)" />
-                                    <ellipse rx="11" ry="4.2" transform="rotate(120)" />
-                                </g>
-                            </svg>
+                            <img src={ReactIcon} alt="ReactJS Logo" className={iconSizeClasses} />
                         </span>
                         for the frontend, deployed on
                         <span className="flex items-center">
                             <span className="font-semibold">Azure AI</span>
-                            {/* Azure AI Logo */}
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="inline-block h-5 w-auto ml-2">
-                                <path fill="#0078D4" d="M11.5 2L1 11.5l10.5 10.5L23 11.5z" />
-                            </svg>
-                        </span>. This robust architecture ensures seamless interaction from student submission to teacher validation and feedback.
+                            <img src={AzureIcon} alt="Azure AI Logo" className={iconSizeClasses} />
+                        </span>This robust architecture ensures seamless interaction from student submission to teacher validation and feedback.
                     </p>
                 </div>
             </div>
