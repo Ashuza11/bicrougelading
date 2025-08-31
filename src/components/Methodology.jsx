@@ -15,7 +15,7 @@ const Methodology = () => {
         <section id="methodology" className="py-16 bg-white">
             <div className="container mx-auto px-6 max-w-5xl">
                 <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-10">
-                    Methodology & Architecture
+                    Methodology, Architecture & Test Data
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div>
@@ -62,11 +62,8 @@ const Methodology = () => {
                             <span className="font-semibold">ReactJS</span>
                             <img src={ReactIcon} alt="ReactJS Logo" className={iconSizeClasses} />
                         </span>
-                        for the frontend, deployed on
-                        <span className="flex items-center">
-                            <span className="font-semibold">Azure AI</span>
-                            <img src={AzureIcon} alt="Azure AI Logo" className={iconSizeClasses} />
-                        </span>This robust architecture ensures seamless interaction from student submission to teacher validation and feedback.
+                        for the frontend.
+                        This robust architecture ensures seamless interaction from student submission to teacher validation and feedback.
                     </p>
                 </div>
             </div>
