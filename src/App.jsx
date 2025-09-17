@@ -10,6 +10,7 @@ import ExperimentalResults from './components/ExperimentalResults';
 import Conclusion from './components/Conclusion';
 import Video from './components/Video';
 import Footer from './components/Footer';
+import Downloads from './components/Downloads'; 
 import ScrollToTopButton from './components/ScrollToTopButton';
 
 
@@ -84,6 +85,7 @@ const App = () => {
           setActiveModel={setActiveModel}
           currentData={currentData}
         />
+        <Downloads />
         <Conclusion />
         <Video youtubeVideoUrl={"https://www.youtube.com/embed/dbF-duYn0LM"} />
       </main>
